@@ -1,7 +1,7 @@
 <template>
   <div class="sub-menu-item">
     <router-link :to="to">
-      <img :src="src" class="icon">
+      <img  v-bind:src="src" class="icon">
       <div class="title">{{ title }}</div>
       <div class="subtitle">{{ subtitle }}</div>
     </router-link>
@@ -43,13 +43,13 @@
   height: 60px;
   margin: auto;
   display: block;
-  background-color: yellow;
+  background-color: white;
 }
 .title {
   height: 25px;
   line-height: 25px;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 18px;
 }
 .subtitle {
   height: 20px;
