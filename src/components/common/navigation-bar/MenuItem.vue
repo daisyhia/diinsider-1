@@ -33,7 +33,7 @@
 .sub-menu-item {
   vertical-align: top;
   display: inline-block;
-  width: 200px;
+  width: 300px;
   height: 125px;
   // background-color: red;
   position: relative;

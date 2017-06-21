@@ -4,6 +4,7 @@
     <div class="container">
       <div class="logo">
         <img src="../../../assets/logo.png" alt="">
+        <span class="logo-text">Grassroots First</span>
       </div>
       <div class="menu">
         <el-menu :default-active="activeIndex" class="el-menu" mode="horizontal">
@@ -81,8 +82,10 @@ export default {
 .header-wrapper {
   display: block;
   height: 60px;
+  width: 100%;
   border-bottom: 2px solid #EEE;
   .header {
+    width: 100%;
     height: 60px;
     background-color: white;
     color: #333;
@@ -93,7 +96,7 @@ export default {
   }
 }
 .container {
-  width: 80%;
+  width: 100%;
   height: 100%;
   margin: auto;
   position: relative;
@@ -102,12 +105,21 @@ export default {
     height: 100%;
     line-height: 60px;
     vertical-align: top;
-
-    width: 200px;
+    color: #48576a;
+    font-family: element-icons;
+    font-weight: bold;
+    width: 800px;
+    .logo-text {
+        font-size: 15px;
+        vertical-align: top;
+        padding: -10px 30px;
+        white-space: nowrap;
+    }
   }
   .menu {
     display: inline-block;
     height: 100%;
+    width: 1000px;
     line-height: 60px;
     vertical-align: top;
   }
@@ -118,7 +130,6 @@ export default {
     vertical-align: top;
     float: right;
     margin-right: 30px;
-
     font-size: 14px;
     color: #48576a;
     & a {
